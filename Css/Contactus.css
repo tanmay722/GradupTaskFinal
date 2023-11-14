@@ -1,0 +1,220 @@
+.phone{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    
+    background:  linear-gradient(to bottom, #f0ac0e 0%, #f56616 100%);
+    align-items: center;
+    justify-content: center;
+}
+.contactblock1{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+.contactcard1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    text-align: center;
+
+    
+}
+.contactcard1 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.contactcard1 a:hover{
+    border-bottom:1px solid black ;
+    transition: all 0.9s ease;
+}
+.contactform{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+.contactformcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+}
+.input{
+    height: 48px;
+    padding: 0 15px;
+    font-size: 15px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    color: var(--body-text-color);
+    margin-bottom: 10px;
+    border: 1px solid rgb(216, 208, 208);
+
+}
+.contactforminfo{
+    display: flex;
+    flex-direction: column;
+    /* background-color: green; */
+    width: 700px;
+}
+.contactform2{
+    display: flex;
+    justify-content: space-between;
+}
+.contactform2 input{
+    width: 350px;
+    
+}
+.input1{
+    margin-right: 5px;
+}
+.contactbackground{
+background-color: #fefbf3;
+}
+.textarea{
+   
+    outline: none;
+    border:1px solid #f0ac0e;
+
+}
+.input{
+    border:1px solid #f0ac0e;
+    outline: none;
+}
+/* .blockiamges{
+    position: relative;
+}
+.corosalimage{
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+} */
+.map{
+    width: 100%;
+    height: auto;
+}
+@media(max-width:1300px){
+    .contactblock1{
+        max-width: 1028px;
+    }
+    .contactcard1{
+        padding-right: 20px;
+    }
+}
+@media(max-width:1100px)
+{
+    .contactblock1{
+        max-width: 928px;
+    }
+}
+@media(max-width:1100px){
+    .contactblock1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contactcard1{
+        padding-right:0;
+        margin-top:70px;
+    }
+    .contactform{
+        max-width: 900px;
+        margin: auto;
+    }
+}
+@media(max-width:750px){
+    .contactforminfo {
+        display: flex;
+        flex-direction: column;
+        /* background-color: green; */
+        width: 500px;
+    }
+}
+@media(max-width:550px){
+    .contactforminfo {
+        display: flex;
+        flex-direction: column;
+        /* background-color: green; */
+        width: 350px;
+    }
+    .contactform2{
+        flex-direction: column;
+    } 
+    .contactform2 .input{
+        width: 318px;
+    }
+}
+@media(max-width:400px){
+    .contactform2 .input {
+        width: 252px;
+    }
+    .input{
+        width: 252px;
+    }
+    textarea{
+        width: 280px;
+    }
+    
+    .contactforminfo{
+        width: 282px;
+    } 
+    .block2info{
+        max-width: 300px;
+    }
+}
+.ourclients{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    align-items: center;
+    margin: auto;
+    padding: 100px 0px;
+    padding-top: 250px;
+
+}
+.listofcompanies{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.company{
+    display: flex;
+    flex-direction: column;
+   margin: 20px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    padding: 30px 40px;
+    transition: 500ms;
+}
+.company img{
+    width: 200px;
+}
+.company:hover{
+    background-color: #edf4c4;
+    color: white;
+}
+.company a{
+    text-decoration: none;
+    color: rgb(0, 0, 0,0.5);
+    transition: 500ms;
+    padding-top: 30px;
+}
+.company a:hover{
+    color: #f0ac0e;
+}
