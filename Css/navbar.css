@@ -712,6 +712,7 @@ ul a:hover{
     }
     .logo img{
         width: 200px;
+        margin-left: -40px;
     }
     .block1info{
         max-width: 1050px;
@@ -912,7 +913,7 @@ ul a:hover{
     .menu{
         font-size: 30px;
                 color: rgb(39, 38, 38);
-                margin-left: 10px;
+                margin-left: 160px;
                 cursor: pointer;
         display: flex;
     }
