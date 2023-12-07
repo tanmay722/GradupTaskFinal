@@ -1,0 +1,131 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+/* Basic styles for the project section */
+.projects {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.project {
+  width: 100%; /* Adjust to take full width on smaller screens */
+  max-width: 400px; /* Limit maximum width */
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffffffbf;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.689);
+}
+
+.project-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.project:hover .overlay {
+  opacity: 1;
+}
+
+.project:hover .project-img img {
+  transform: scale(1.1);
+}
+
+.project-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.project:hover .project-info {
+  opacity: 1;
+}
+
+.project-info h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.project-info p {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  text-decoration: none;
+  background-color: #f56616;
+  color: #fff;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #f56616;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .projects {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 60vh;
+  }
+
+  .project {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .project:last-child {
+    margin-right: 0;
+  }
+}

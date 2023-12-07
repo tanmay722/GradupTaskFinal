@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="Contactus.html">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./Css/Login.css" />
+    <link rel="stylesheet" href="./Css/project.css" />
+    <link rel="stylesheet" href="./Css/Faq.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
 
     <title>Teksila</title>
 </head>
@@ -17,10 +24,10 @@
         <div class="navbar2">
             <a href="index.html" style="cursor: pointer;">
                 <div class="logo">
-                    <img src="./Images/Digital.png" alt="" width="10px" height="90px">
+                    <img src="./Images/Digital.png" alt="" >
                 </div>
             </a>
-            <ul class="ul">
+            <ul class="navbar-ul">
                 <a href="index.html">
 
                     <li>Home</li>
@@ -202,35 +209,84 @@
 
                         </ul>
                     </li>
-
+                </a>
+                <a href="portfoli.html">
+                    <li>Portfolio</li>
                 </a>
                 <a href="Contactus.html">
 
                     <li>Contact us</li>
                 </a>
-                <a href="portfoli.html">
-
-                    <li>Portfolio</li>
-                </a>
+                
+                <button class="button3 " id="form-open" >Login</button>
             </ul>
             <div class="menu" onclick="chanceslider()">
                 <i class="fa-solid fa-bars"></i>
             </div>
 
-            <div>
-
-                <a href="Contactus.html">
-
-                    <button class="button2 button">Enquiry Now</button>
-                </a>
-            </div>
 
         </div>
     </nav>
     <div class="bodybackground">
+        <signLogin class="form_container">
+          <i class="uil uil-times form_close"></i>
+          <!-- Login From -->
+          <div class="form login_form">
+            <form action="#">
+              <h2>Login</h2>
+              <div class="input_box">
+                <input type="email" placeholder="Enter your email" required />
+                <i class="uil uil-envelope-alt email"></i>
+              </div>
+              <div class="input_box">
+                <input
+                  type="password"
+                  placeholder="Enter your password"
+                  required
+                />
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw_hide"></i>
+              </div>
+              <div class="option_field">
+                <span class="checkbox">
+                  <input type="checkbox" id="check" />
+                  <label for="check">Remember me</label>
+                </span>
+                <a href="#" class="forgot_pw">Forgot password?</a>
+              </div>
+              <button class="button">Login Now</button>
+              <div class="login_signup">
+                Don't have an account? <a href="#" id="signup">Signup</a>
+              </div>
+            </form>
+          </div>
+          <!-- Signup From -->
+          <div class="form signup_form">
+            <form action="#">
+              <h2>Signup</h2>
+              <div class="input_box">
+                <input type="email" placeholder="Enter your email" required />
+                <i class="uil uil-envelope-alt email"></i>
+              </div>
+              <div class="input_box">
+                <input type="password" placeholder="Create password" required />
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw_hide"></i>
+              </div>
+              <div class="input_box">
+                <input type="password" placeholder="Confirm password" required />
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw_hide"></i>
+              </div>
+              <button class="button">Signup Now</button>
+              <div class="login_signup">
+                Already have an account? <a href="#" id="login">Login</a>
+              </div>
+            </form>
+          </div>
+        </signLogin>
+
         <div class="block1info">
-
-
             <div class="text">
                 <div class="totaltext">
 
@@ -248,9 +304,9 @@
                 <div class="contactinfo" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-once="true">
                     <a href="Contactus.html">
 
-                        <button class="button2" style="margin: 40px;">Contact Us</button>
+                        <button class="button2" >Contact Us</button>
                         <a href="./Images/TEKSILA (Company Profile).pdf" style="cursor: pointer;">
-                            <button class="button3 "><i class="fa-solid fa-download"
+                        <button class="button3 "><i class="fa-solid fa-download"
                                     style="padding-right: 10px;"></i>Download brochure</button>
 
                         </a>
@@ -397,6 +453,9 @@
             </div>
         </div>
     </div>
+     <!-- 
+        - #PROJECT
+      -->
     <div class="block5">
         <div class="block5background">
             <img src="./Images/half-circle-bg.png" alt="">
@@ -405,17 +464,85 @@
         <div class="block5container">
             <h1>OUR Portfolio, OUR Pride</h1>
             <h3>View Complete Showcase</h3>
-            <div class="blockiamges" data-aos="zoom-out" data-aos-once="true">
-
-                <img class="img" src="https://techeor.in/images/laptop-screen.png" alt="">
-                <img class="corosalimage" name="slide" src="" alt="notloading">
-
-            </div>
-            <div class="iconsforcorosal">
-                <i class="fa-solid fa-circle-chevron-left" onclick="changeI()"></i>
-                <i class="fa-solid fa-circle-chevron-right" onclick="changej()"></i>
-            </div>
         </div>
+
+      <section class="projects">
+  <div class="project">
+    <div class="project-img">
+      <img src="./Images/web1.png" alt="Project 1">
+      <div class="overlay"></div>
+    </div>
+    <div class="project-info">
+      <h3>Project 1</h3>
+      <p>Description of Project 1.</p>
+      <a href="#" class="btn">View Project</a>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-img">
+      <img src="../Images/web2.png" alt="Project 2">
+      <div class="overlay"></div>
+    </div>
+    <div class="project-info">
+      <h3>Project 2</h3>
+      <p>Description of Project 2.</p>
+      <a href="#" class="btn">View Project</a>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-img">
+      <img src="./Images/web3.png" alt="Project 3">
+      <div class="overlay"></div>
+    </div>
+    <div class="project-info">
+      <h3>Project 2</h3>
+      <p>Description of Project 2.</p>
+      <a href="#" class="btn">View Project</a>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-img">
+      <img src="./Images/web4.png" alt="Project 4">
+      <div class="overlay"></div>
+    </div>
+    <div class="project-info">
+      <h3>Project 2</h3>
+      <p>Description of Project 4.</p>
+      <a href="#" class="btn">View Project</a>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-img">
+      <img src="./Images/web5.png" alt="Project 5">
+      <div class="overlay"></div>
+    </div>
+    <div class="project-info">
+      <h3>Project 2</h3>
+      <p>Description of Project 2.</p>
+      <a href="#" class="btn">View Project</a>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-img">
+      <img src="./Images/website1.png" alt="Project 6">
+      <div class="overlay"></div>
+    </div>
+    <div class="project-info">
+      <h3>Project 2</h3>
+      <p>Description of Project 6.</p>
+      <a href="#" class="btn">View Project</a>
+    </div>
+  </div>
+
+  <!-- Add more project entries as needed -->
+ </section>
+ </div>
+
     </div>
     <div class="block6">
         <div class="block5background2">
@@ -461,152 +588,119 @@
 
         </div>
     </div>
-    <div class="indexblock7">
+    <!-- <div class="indexblock7">
         <div class="indexblock7content">
             <h1>Happy Clients <span class="span" style="color: white;">Feedback</span></h1>
             <p class="p1">Client accomplishment is the biggest asset for us.</p>
         </div>
-    </div>
-    <!-- thasdfkasdhfasd -->
-    <div class="gallery-wrap" data-aos="fade-up" data-aos-once="true"
-        style="margin-top: -70px;display: flex;flex-direction: column;">
+    </div> -->
 
-
-        </button>
-        <div class="gallery">
-            <div class="div">
-                <span>
-                    <div class="indexcards">
-                        <p class="para">
-                            "Working with Teksila has been a game-changer for our business.
-                        </p>
-                        <h3 style="text-align: center;font-weight: bolder;">Dr Rohit Pandey</h3>
-                        <p style="color: gray;padding: 5px;font-size: 12px;line-height: 30px;"> Doctor </p>
-
-                        <p></p>
-                        <div class="symbol">
-
-
-                            <img src="https://teksila.in/wp-content/uploads/2023/10/53fc69b6-d1b1-4820-b250-10ce3fd4f92e.jpg"
-                                alt="" width="60px" height="60px">
-
-                        </div>
-                    </div>
-                </span>
-
-                </span>
-                <span>
-                    <div class="indexcards">
-                        <p class="para">I hired Teksila for their Website Development services, and I'm thrilled with
-                            the outcome.</p>
-                        <h3 style="text-align: center;font-weight: bolder;">CA Karan Shaw</h3>
-                        <p style="color: gray;padding: 5px;font-size: 12px;line-height: 30px;"> Chartered Accountant</p>
-
-                        <p></p>
-                        <div class="symbol">
-
-
-                            <img src="https://teksila.in/wp-content/uploads/2023/10/9366b099-e84b-40c8-89ff-8b6a9e908f6f.jpg"
-                                alt="" width="60px" height="60px">
-
-                        </div>
-                    </div>
-                </span>
-                <span>
-                    <div class="indexcards">
-                        <p class="para">"I can't thank Teksila enough for their exceptional website development
-                            services. </p>
-                        <h3 style="text-align: center;font-weight: bolder;">Swarnjeet Singh</h3>
-                        <p style="color: gray;padding: 5px;font-size: 12px;line-height: 30px;"> Director Simsun Private
-                            Limited </p>
-
-
-                        <div class="symbol">
-
-
-                            <img src="https://teksila.in/wp-content/uploads/2023/10/217ed5dd-675d-4953-9811-8ddf39fecfcf.jpg"
-                                alt="" width="60px" height="60px">
-
-                        </div>
-                    </div>
-                </span>
-               
-                <span>
-                    <div class="indexcards">
-                        <p class="para">
-                            "Website development services in teksila is very good" </p>
-                        <h3 style="text-align: center;font-weight: bolder;">Manoj Singh</h3>
-                        <p style="color: gray;padding: 5px;font-size: 12px;line-height: 30px;">Director Radiant India
+    <div class="testimonial-section">
+    <h2>Testimonials</h2>
+    
+    <div class="testimonial-container">
+      <div class="testimonial-scroll">
+        <div class="testimonial-card">
+          <p class="quote">"Working with Teksila has been a game-changer for our business."</p>
+          <h3>Dr Rohit Pandey</h3>
+          <p class="designation">Doctor</p>
+          <img src="./Images/website1.png" alt="Dr Rohit Pandey">
+        </div>
+        <div class="testimonial-card">
+          <p class="quote">"I hired Teksila for their Website Development services, and I'm thrilled with
+                            the outcome."</p>
+          <h3>CA Karan Shaw</h3>
+          <p class="designation">Chartered Accountant</p>
+          <img src="https://teksila.in/wp-content/uploads/2023/10/9366b099-e84b-40c8-89ff-8b6a9e908f6f.jpg" alt="Dr Rohit Pandey">
+        </div>
+        <div class="testimonial-card">
+          <p class="quote">"I can't thank Teksila enough for their exceptional website development
+                            services. "</p>
+          <h3>Swarnjeet Singh</h3>
+          <p class="designation">Director Simsun Private
+                            Limited</p>
+          <img src="https://teksila.in/wp-content/uploads/2023/10/217ed5dd-675d-4953-9811-8ddf39fecfcf.jpg" alt="Dr Rohit Pandey">
+        </div>
+        <div class="testimonial-card">
+          <p class="quote">"Website development services in teksila is very good"</p>
+          <h3>Manoj Singh</h3>
+          <p class="designation">Director Radiant India
                             Multitrade Private Limited</p>
-                        <div class="symbol">
-
-
-                            <img src="https://teksila.in/wp-content/uploads/2023/10/72640716-a6bc-44e5-9fb4-dcbae23e86de.jpg"
-                                alt="" width="60px" height="60px">
-
-                        </div>
-                    </div>
-                </span>
-                <span>
-                    <div class="indexcards">
-                        <p class="para">
-                            "The Website development services provided by Teksila have been a revelation for our brand.
-                        </p>
-                        <h3 style="text-align: center;font-weight: bolder;">Neha Jaiswal</h3>
-                        <p style="color: gray;padding: 5px;font-size: 12px;line-height: 30px;">Director & CO-FOUNDER</p>
-
-
-                        <div class="symbol">
-
-
-                            <img src="https://teksila.in/wp-content/uploads/2023/10/NEHA-JAI.jpg" alt="" width="60px"
-                                height="60px">
-
-                        </div>
-                    </div>
-                </span>
-            </div>
-            <!-- <div class="div">
-            <span>
-                <div class="indexcards">
-                    <p class="para">Professional Designer and developer Excelent Service Professional Designer and developer Excelent Service</p>
-                    <h3 style="text-align: center;font-weight: bolder;">Anant singh</h3>
-                    <div class="symbol">
-        
-                        <p class="circle">"</p>
-                    </div>
-                </div>
-            </span>
-            <span>
-                <div class="indexcards">
-                    <p class="para">Professional Designer and developer Excelent Service Professional Designer and developer Excelent Service</p>
-                    <h3 style="text-align: center;font-weight: bolder;">Anant singh</h3>
-                    <div class="symbol">
-        
-                        <p class="circle">"</p>
-                    </div>
-                </div>
-            </span>
-            <span>
-                <div class="indexcards">
-                    <p class="para">Professional Designer and developer Excelent Service Professional Designer and developer Excelent Service</p>
-                    <h3 style="text-align: center;font-weight: bolder;">Anant singh</h3>
-                    <div class="symbol">
-        
-                        <p class="circle">"</p>
-                    </div>
-                </div>
-            </span>
-        </div> -->
+          <img src="https://teksila.in/wp-content/uploads/2023/10/72640716-a6bc-44e5-9fb4-dcbae23e86de.jpg" alt="Dr Rohit Pandey">
         </div>
-        <div class="iconsfortestimonals" style="display: flex;">
-            <i class="fa-solid fa-circle-chevron-left" id="backBtn"></i>
-
-            <i class="fa-solid fa-circle-chevron-right" id="nextBtn"></i>
+        <div class="testimonial-card">
+          <p class="quote">"The Website development services provided by Teksila have been a revelation for our brand."</p>
+          <h3>Neha Jaiswal</h3>
+          <p class="designation">Director & CO-FOUNDER</p>
+          <img src="https://teksila.in/wp-content/uploads/2023/10/53fc69b6-d1b1-4820-b250-10ce3fd4f92e.jpg" alt="Dr Rohit Pandey">
         </div>
-
-
+        <div class="testimonial-card">
+          <p class="quote">"Professional Designer and developer Excelent Service Professional Designer and developer Excelent Service."</p>
+          <h3>Anant singh</h3>
+          <p class="designation">Director & CO-FOUNDER</p>
+          <img src="https://teksila.in/wp-content/uploads/2023/10/53fc69b6-d1b1-4820-b250-10ce3fd4f92e.jpg" alt="Dr Rohit Pandey">
+        </div>
+        <!-- Add more testimonial cards here -->
+      </div>
     </div>
+  </div>
+
+  <!-- faq -->
+   <div class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+      <div class="faq-item">
+        <input type="checkbox" id="faq1" class="faq-toggle visually-hidden">
+        <label for="faq1" class="faq-question">
+          <span class="faq-number">1.</span>
+          <span class="faq-text">What services do you provide?</span>
+          <!-- <span class="faq-toggle-symbol">+</span> -->
+        </label>
+        <div class="faq-answer">
+          <p>We provide a range of services including consultancy, product development, and mentorship for startups.</p>
+        </div>
+      </div>
+      <hr class="faq-divider">
+      <div class="faq-item">
+        <input type="checkbox" id="faq2" class="faq-toggle visually-hidden">
+        <label for="faq2" class="faq-question">
+          <span class="faq-number">2.</span>
+          <span class="faq-text">How can I apply for mentorship?</span>
+          <!-- <span class="faq-toggle-symbol">+</span> -->
+        </label>
+        <div class="faq-answer">
+          <p>You can apply for mentorship through our online application form available on our website.</p>
+        </div>
+      </div>
+      <hr class="faq-divider">
+      <div class="faq-item">
+        <input type="checkbox" id="faq3" class="faq-toggle visually-hidden">
+        <label for="faq3" class="faq-question">
+          <span class="faq-number">3.</span>
+          <span class="faq-text">How do I make payments?</span>
+          <!-- <span class="faq-toggle-symbol">+</span> -->
+        </label>
+        <div class="faq-answer">
+          <p>Use this section to answer some of your customers most frequently asked questions in a compact and concise manner. There's plenty of space for you to add more questions.</p>
+        </div>
+      </div>
+      <hr class="faq-divider">
+      <div class="faq-item">
+        <input type="checkbox" id="faq4" class="faq-toggle visually-hidden">
+        <label for="faq4" class="faq-question">
+          <span class="faq-number">4.</span>
+          <span class="faq-text">How do I get in touch with support?</span>
+          <!-- <span class="faq-toggle-symbol">+</span> -->
+        </label>
+        <div class="faq-answer">
+          <p>Use this section to answer some of your customers most frequently asked questions in a compact and concise manner. There's plenty of space for you to add more questions.</p>
+        </div>
+      </div>
+      <!-- Add more FAQ items -->
+    </div>
+  </div>
+
+
     <!-- sscokashdfkja -->
 
     <div class="slidebar" id="slidebar">
@@ -619,9 +713,12 @@
             <li><a href="">Services</a></li>
             <li><a href="Contactus.html">Contact Us</a></li>
             <li><a href="portfoli.html">Portfolio</a></li>
-
-            <a href=""><button class="button2">Enquiry</button></a>
-
+            <li>
+                <a href=""><button class="button1">Enquiry</button></a>
+            </li>
+            <li>
+                <button class="button1 " id="form-open" >Login</button>
+            </li>
         </ul>
     </div>
 
@@ -675,7 +772,7 @@
                 <ul>
                     <li class="contact">Contact Information</li>
                     <li>
-                        <h4 class="contact">Office address</h4>
+                        <h4 class="contact">Office address: </h4>
                         <p class="pOffice">UG Floor,Regus TOWER-2 , Assotech Bussiness Cresterra Plot No.22,Sector
                             135,Noida,Uttar Pradesh 201301</p>
                     </li>
@@ -803,9 +900,6 @@
         }
 
         window.onload = changeImg;
-
-
-
     </script>
     <script src="index.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
