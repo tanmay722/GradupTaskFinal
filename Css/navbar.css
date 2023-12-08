@@ -184,7 +184,7 @@ ul a:hover {
   margin-bottom: 18px;
 }
 .block2text p {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.6rem;
   color: rgb(75, 74, 74);
   padding: 8px 8px;
@@ -195,28 +195,91 @@ ul a:hover {
 .block2text {
   padding-left: 20px;
 }
-.visibleregian {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 16px;
-  font-family: "source sans Pro", sans-serif;
+/* Base styles for the service card */
+.service-card {
+  background-color: #f9f1e7f9;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.277);
   padding: 10px;
-}
-.hiddingdata {
-  display: visible;
-  transform: 4000ms;
+  margin: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  max-width: 600px;
+  /*Limitingthemaximumwidth*/
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
-.visible {
-  background-color: white;
-  padding: 1px 20px;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-  margin-bottom: 10px;
+/* Styling for the service info container */
+.service-info {
+  text-align: center;
 }
+
+/* Styling for the service heading */
+.service-heading h3 {
+  color: #000000;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+/* Styling for the service description */
+.service-description {
+  color: #666;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+/* Hover effect for the service card */
+.service-card:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation on service card load */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.service-card {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .service-card {
+    max-width: 100%;
+    margin: 15px 0;
+  }
+  .service-heading h3 {
+    font-size: 18px;
+  }
+  .service-description {
+    font-size: 12px;
+  }
+}
+
 .icons i {
   font-size: 30px;
   color: #f56616;
+}
+
+.hiddingdata2 {
+  display: none; /* Hide the paragraphs by default */
+}
+.hiddingdata2:hover {
+  display: block !important; /* Hide the paragraphs by default */
 }
 .block3 {
   display: flex;
@@ -449,9 +512,6 @@ ul a:hover {
   line-height: 46px;
   width: 48px;
   height: 48px;
-  /* display: flex;
-    align-items: center;
-    justify-content: center; */
   font-size: 24px;
   -webkit-border-radius: 6px;
   border-radius: 6px;
@@ -631,7 +691,7 @@ h3 {
 .subhover:hover .line2 {
   display: flex;
 }
-*/ .network {
+.network {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -711,9 +771,41 @@ h3 {
     width: 200px;
     margin-left: -40px;
   }
+  .subelements1 {
+    position: absolute;
+    background-color: red;
+    width: 380px;
+    height: auto;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    transform: translateY(900px);
+    border-radius: 6px;
+    color: rgb(70, 69, 69);
+    font-weight: lighter;
+    -webkit-transform: translateY(900px);
+    -moz-transform: translateY(900px);
+    -ms-transform: translateY(900px);
+    -o-transform: translateY(900px);
+  }
+  .services:hover .subelements1 {
+    transform: translateY(0);
+    transition: 500ms;
+  }
+  .subelements1 {
+    line-height: 20px;
+  }
   .block1info {
-    max-width: 1050px;
+    max-width: 950px;
     margin: auto;
+    margin-top: -70px;
+  }
+  .button2 {
+    margin-left: 20px;
+    margin-bottom: 20px;
   }
   .block2info {
     max-width: 1050px;
@@ -753,6 +845,11 @@ h3 {
   .block1info {
     max-width: 950px;
     margin: auto;
+    margin-top: -70px;
+  }
+  .button2 {
+    margin-left: 20px;
+    margin-bottom: 20px;
   }
   .image img {
     width: 500px;
@@ -797,6 +894,7 @@ h3 {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-top: -80px;
   }
   .block2info {
     display: flex;
@@ -908,6 +1006,17 @@ h3 {
   .block6info {
     max-width: 520px;
   }
+
+  .block1info {
+    max-width: 380px;
+    margin: auto;
+    margin-top: -90px;
+  }
+
+  .button2 {
+    margin: 20px;
+  }
+
   .block5container .img {
     width: 470px;
   }
@@ -927,6 +1036,7 @@ h3 {
   .block1info {
     max-width: 380px;
     margin: auto;
+    margin-top: -90px;
   }
   .block2info {
     max-width: 380px;
@@ -1029,6 +1139,7 @@ h3 {
   .block1info {
     max-width: 300px;
     margin: auto;
+    margin-top: -90px;
   }
   .button3 {
     padding: 7px;
@@ -1092,9 +1203,7 @@ h3 {
   color: #f0ac0e;
   font-size: 30px;
 }
-.hiddingdata2 {
-  display: none;
-}
+
 .whatsapp {
   position: fixed;
   display: flex;

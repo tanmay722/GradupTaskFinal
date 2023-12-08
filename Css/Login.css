@@ -86,7 +86,7 @@
   border-bottom: 1.5px solid #aaaaaa;
 }
 .input_box input:focus {
-  border-color: #7d2ae8;
+  border-color: #f56616;
 }
 .input_box i {
   position: absolute;
@@ -101,7 +101,7 @@
 }
 .input_box input:focus ~ i.email,
 .input_box input:focus ~ i.password {
-  color: #7d2ae8;
+  color: #f56616;
 }
 .input_box i.pw_hide {
   right: 0;
@@ -115,7 +115,7 @@
   justify-content: space-between;
 }
 .form_container a {
-  color: #7d2ae8;
+  color: #f56616;
   font-size: 12px;
 }
 .form_container a:hover {
@@ -127,7 +127,7 @@
   white-space: nowrap;
 }
 .checkbox input {
-  accent-color: #7d2ae8;
+  accent-color: #f56616;
 }
 .checkbox label {
   font-size: 12px;
@@ -136,7 +136,7 @@
   color: #0b0217;
 }
 .form_container .button {
-  background: #7d2ae8;
+  background: #f56616;
   margin-top: 30px;
   width: 100%;
   padding: 10px 0;
