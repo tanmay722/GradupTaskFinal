@@ -113,10 +113,18 @@ body {
 /* Media query for responsiveness */
 @media screen and (max-width: 768px) {
   .projects {
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
     overflow-x: auto;
-    justify-content: flex-start;
-    padding-bottom: 60vh;
+    justify-content: center;
+    /* justify-content: flex-start; */
+    padding-bottom: 30vh;
+    /* max-height: 80vh; */
+    scrollbar-width: thin; /* Thin scrollbar for better UX */
+    scrollbar-color: #aaa #f7f7f7; /* Scrollbar color */
+  }
+
+  .block5 {
+    margin-bottom: -30vh;
   }
 
   .project {
