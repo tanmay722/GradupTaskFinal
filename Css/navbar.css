@@ -5,13 +5,14 @@
   font-family: "Poppins", sans-serif;
 }
 .navbar {
+  /* background: linear-gradient(-84deg, #f28d11e8 0%, #2b3a5be1 100%); */
   position: fixed;
   align-items: center;
-  box-shadow: 0 4px 15px -10px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 25px -10px rgba(0, 0, 0, 0.695);
   width: 100%;
   top: 0;
   z-index: 1;
-  background-color: rgba(255, 255, 255, 0.91);
+  background-color: rgba(255, 255, 255, 0.958);
 }
 .navbar2 {
   display: flex;
@@ -191,6 +192,120 @@ ul a:hover {
 .block2text {
   padding-left: 20px;
 }
+
+/*---------- Process Section ----------*/
+/* General Styles */
+.section {
+  padding-bottom: 12px;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.title {
+  margin-top: 0;
+  font-weight: 700;
+}
+
+.section_text {
+  color: gray;
+  font-size: 15px;
+  line-height: 1.2;
+  margin-bottom: 1vw;
+  margin-top: -2vw;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.wrapper > * {
+  flex: 1 1 50%; /* Equal width for both elements */
+}
+
+.process_banner {
+  max-width: 100%;
+  margin-bottom: 0px;
+}
+
+.process_banner img {
+  width: 100%;
+  height: 40vw;
+  display: block;
+  border-radius: 8px; /* Optional: add rounded corners */
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  */
+}
+.grid_list {
+  list-style: none;
+  padding-top: 8vw;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.process_item {
+  flex: 1 1 250px; /* Adjust the width as needed */
+  text-align: center;
+  gap: 15px;
+}
+
+.item_icon {
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.item_title {
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.item_text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+  .wrapper > * {
+    flex: 1 1 100%; /* Full width for both elements on smaller screens */
+    margin-bottom: 20px;
+  }
+
+  .process_banner {
+    margin-bottom: 0;
+  }
+  .process_banner img {
+    width: 100%;
+    height: auto;
+  }
+
+  .grid_list {
+    text-align: center;
+  }
+
+  .process_item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .item_icon {
+    margin-bottom: 15px;
+  }
+}
+
 /* Base styles for the service card */
 .service-card {
   background-color: #f9f1e7f9;
@@ -278,6 +393,7 @@ ul a:hover {
   display: block !important; /* Hide the paragraphs by default */
 }
 .block3 {
+  background-image: url(../Images/process-bg.png);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -367,7 +483,7 @@ ul a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 40px;
+  padding-bottom: 70px;
 }
 .block5container .img {
   width: 1123px;
@@ -764,6 +880,53 @@ h3 {
   cursor: pointer;
   display: none;
 }
+
+/* #contact us  */
+.cta {
+  margin: 15px auto 20px auto;
+  width: 80%;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)),
+    url(../Images/banner2.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0px;
+}
+.btn {
+  color: whitesmoke;
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid black;
+  position: relative;
+  cursor: pointer;
+  padding: 12px 34px;
+}
+
+.btn:hover {
+  font-size: 20px;
+  box-shadow: 2px 2px 20px rgb(244, 241, 62);
+  transition: all 2s;
+}
+
+.cta h1 {
+  font-family: "Julee", cursive;
+  color: whitesmoke;
+  margin-bottom: 40px;
+  padding: 0px;
+}
+
+.cta .btn:hover {
+  font-size: 30px;
+}
+
+@media (max-width: 700px) {
+  .cta h1 {
+    font-family: "Julee", cursive;
+    font-size: 24px;
+  }
+}
+
 @media (max-width: 1300px) {
   .navbar2 {
     margin: 0px 40px;
@@ -1096,7 +1259,7 @@ h3 {
     overflow-x: scroll;
   }
   .block6 {
-    margin-top: -332px;
+    margin-top: -310px;
   }
 }
 @media (max-width: 450px) {
@@ -1141,7 +1304,7 @@ h3 {
     margin: auto;
   }
   .block5 {
-    padding-bottom: 90px;
+    padding-bottom: 60px;
   }
   .block1info {
     max-width: 300px;
