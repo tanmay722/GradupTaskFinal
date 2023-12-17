@@ -21,19 +21,6 @@ function scrollFunction() {
   }
 }
 
-//faq
-// document.addEventListener("DOMContentLoaded", function () {
-//   const faqItems = document.querySelectorAll(".faq-item");
-
-//   faqItems.forEach((item) => {
-//     const faqQuestion = item.querySelector(".faq-question");
-
-//     faqQuestion.addEventListener("click", () => {
-//       item.classList.toggle("active");
-//     });
-//   });
-// });
-
 // Mailbox
 document.getElementById("mailButton").addEventListener("click", function () {
   window.location.href =
