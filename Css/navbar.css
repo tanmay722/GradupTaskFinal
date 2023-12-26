@@ -773,7 +773,7 @@ ul a:hover {
 }
 .contact {
   color: white;
-  padding-top: 40px;
+  padding-top: 20px;
   font-size: 20px;
   font-weight: bold;
 }
@@ -790,8 +790,8 @@ ul a:hover {
   font-size: 25px;
 }
 .division3 li {
-  padding-top: 20px;
-  font-size: 18px;
+  padding-top: 8px;
+  font-size: 16px;
   list-style: circle;
 }
 .facebook {

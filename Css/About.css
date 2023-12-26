@@ -107,6 +107,11 @@ h2 {
   color: rgb(39, 37, 37);
   line-height: 1.6;
 }
+.p1 {
+  font-size: 18px;
+  color: rgb(39, 37, 37);
+  line-height: 1.6;
+}
 
 .block3 {
   display: flex;
